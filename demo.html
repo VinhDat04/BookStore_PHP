@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Content/CSS/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .zoom:hover {
+            transition: 0.5s;
+            transform: scale(1.1);
+        }
+
+        .carousel {
+            z-index: -1;
+            /* Đặt z-index để đặt carousel xuống phía sau */
+        }
+
+        .header {
+
+            position: fixed;
+
+            z-index: 1;
+        }
+
+        .background {
+            background-color: rgba(227, 220, 202, 0.7);
+            /* Sử dụng rgba để chỉ định màu và độ trong suốt */
+        }
+
+        .menu:hover {
+            text-decoration: none;
+            box-shadow: 0 4px white;
+            transition: 0.2s;
+        }
+
+        .DMSP {
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: all 0.2s;
+
+        }
+
+        .DMSP:hover {
+            color: #fff;
+            background-color: #498374;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header background container-fluid">
+        <div class="container">
+            <!-- Menu -->
+            <div class="">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <a href=""><img class="logo" src="./Content/img/logo_book.png" alt=""></a>
+                        <div class="form-group">
+                            <input type="text" name="" id="" class="form-control mt-3 "
+                                style="width: 400px; height: 45px; border: 2px solid #498374; font-size:15px ; border-radius:5px"
+                                placeholder="Nhập từ khóa tìm kiếm..." aria-describedby="helpId">
+                        </div>
+                        <button
+                            style="height:60px; width:60px; background-color:#498374; border-radius: 50%; margin-left:-50px; color:white; font-size:20px"
+                            type="button" class="btn mt-1 btn-lg zoom"><i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                        <a href=""
+                            style="text-decoration: none; margin-left: 20px; color:#498374; font-weight:bold; margin-right: 5px; "
+                            class="zoom"><i class="fa fa-user" aria-hidden="true"></i> Đăng
+                            Ký</a> |
+                        <a href=""
+                            style="text-decoration: none; margin-left: 5px; color:#498374; font-weight:bold; margin-right: 5px; "
+                            class="zoom"><i class="fa fa-lock" aria-hidden="true"></i> Đăng Nhập</a> |
+                        <a href=""
+                            style="text-decoration: none; margin-left: 5px; color:#498374; font-weight:bold; margin-right: 5px; "
+                            class="zoom"><i class="fas fa-sign-out-alt"></i>
+                            Đăng Xuất</a>
+                        <a href="" style="text-decoration:none">
+                            <span><i style="font-size: 30px; color:#498374; margin-left:10px"
+                                    class="fa fa-cart-arrow-down" aria-hidden="true"></i> <sup
+                                    style="color:red">(0)</sup> </span>
+                        </a>
+                    </div>
+                </form>
+                <form class="form-inline text-dark">
+                    <div class="form-group">
+
+
+                        <div class="dropdown open">
+                            <button id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                type="button" class="btn text-light text-left mb-2  "
+                                style="background-color: #498374; font-weight: bold ; width: 350px; height:50px"><i
+                                    class="fa fa-bars" aria-hidden="true"></i> TẤT CẢ DANH MỤC
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="triggerId" style="width:350px; ">
+                                <button class="dropdown-item DMSP" href="#">Tiểu Thuyết</button>
+                                <button class="dropdown-item DMSP" href="#">Khoa Học - Viễn Tưởng</button>
+                                <button class="dropdown-item DMSP" href="#">Thiếu Nhi</button>
+                                <button class="dropdown-item DMSP" href="#">Lịch Sử</button>
+                                <button class="dropdown-item DMSP" href="#">Kinh Doanh</button>
+                                <button class="dropdown-item DMSP" href="#">Tự Nhiên</button>
+                            </div>
+                        </div>
+
+
+                        <a href="" style=" margin-left: 50px;  color:#1c1e21;font-weight:bold; margin-right: 20px; "
+                            class="menu">Tất Cả Sách</a>
+                        <a href="" style="; margin-left: 20px; color:#1c1e21; font-weight:bold; margin-right: 20px; "
+                            class="menu">Bán
+                            Chạy</a>
+                        <a href="" style="; margin-left: 20px; color:#1c1e21; font-weight:bold; margin-right: 20px; "
+                            class="menu">Nhiều Lượt Xem
+                            </a>
+                        <a href="" style="; margin-left: 20px; color:#1c1e21; font-weight:bold; margin-right: 20px; "
+                            class="menu">Mới
+                            Về</a>
+                        <a href="" style="; margin-left: 20px; color:#1c1e21; font-weight:bold; margin-right: 20px; "
+                            class="menu">Khuyến
+                            Mãi</a>
+                        <a href="" style="; margin-left: 20px; color:#1c1e21; font-weight:bold; margin-right: 20px; "
+                            class="menu">Tin
+                            Tức</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselId" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="./Content/img/bg1.webp" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img src="./Content/img/bg2.webp" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img src="./Content/img/bg3.webp" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

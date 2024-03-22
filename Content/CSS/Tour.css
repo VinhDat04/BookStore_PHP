@@ -1,0 +1,291 @@
+/* Header Css****************************************************************************************************/
+.zoom:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.carousel {
+    z-index: -1;
+    /* Đặt z-index để đặt carousel xuống phía sau */
+}
+
+.header {
+
+    position: absolute;
+
+    z-index: 2;
+}
+
+.background {
+    background-color: rgba(227, 220, 202, 0.8);
+    /* Sử dụng rgba để chỉ định màu và độ trong suốt */
+}
+
+.menu:hover {
+    text-decoration: none;
+    box-shadow: 0 4px white;
+    transition: 0.2s;
+}
+
+.DMSP {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.2s;
+    /* color: #000; */
+
+}
+
+.DMSP:hover {
+    color: #fff;
+    background-color: #498374;
+    transform: scale(1.05);
+    text-decoration: none;
+
+}
+
+#a_dmsp {
+    text-decoration: none;
+    /* loại bỏ gạch chân */
+    color: black;
+    /* chữ màu đen */
+}
+
+#a_dmsp:hover {
+    color: white;
+    /* khi rê chuột vào, chữ màu trắng */
+}
+
+
+.logo {
+    width: 300px;
+}
+
+.search {
+    border: 1px solid green;
+}
+
+
+
+/* End Header Css ***************************************************************************************************/
+
+
+/* Home Css */
+
+.hinh {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.DM_button {
+    margin-top: 5px;
+    width: 300px;
+    height: 50px;
+    background-color: #498374;
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+    border-bottom-left-radius: 0px;
+}
+
+.nutbam {
+    background-color: #498374;
+    color: white;
+}
+
+.nutbam:hover {
+    transform: scale(1.1);
+    color: white;
+    transition: 0.5s;
+
+}
+
+.cart {
+    background-color: #498374;
+    color: white;
+}
+
+.cart:hover {
+    background-color: #FFD700;
+}
+
+.gia {
+    font-size: 120%;
+    text-align: center;
+}
+
+.sp {
+    width: auto;
+    height: 430px;
+    cursor: pointer;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.sp:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+.news:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+.title {
+    height: 40px;
+    font-size: 115%;
+    color: red;
+}
+
+.title:hover {
+    color: #498374;
+}
+
+.page {
+    margin: auto;
+    padding-top: 30px;
+}
+
+.news:hover {
+    color: #498374;
+}
+
+/* End Home Css */
+
+/* Footer Css *******************************************************************************************************/
+.footer {
+    color: #498374;
+}
+
+.footer1 {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.4s ease;
+}
+
+.footer1:hover {
+    color: #498374;
+    border-left: 5px solid #498374;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.facebook {
+    width: 50px;
+    height: 50px;
+    background-color: #ced7de;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 7px;
+    margin-right: 5px;
+}
+
+.facebook:hover {
+    background-color: #337ab7;
+    transition: 0.4s;
+}
+
+.facebook1 {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 130%;
+
+}
+
+.facebook1:hover {
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.twitter {
+    width: 50px;
+    height: 50px;
+    background-color: #ced7de;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 7px;
+    margin-right: 5px;
+
+}
+
+.twitter:hover {
+    background-color: #17a2b8;
+    transition: 0.4s;
+}
+
+.twitter1 {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 130%;
+
+
+}
+
+.twitter1:hover {
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.dribbble {
+    width: 50px;
+    height: 50px;
+    background-color: #ced7de;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 7px;
+    margin-right: 5px;
+
+}
+
+.dribbble:hover {
+    background-color: #e83e8c;
+    transition: 0.4s;
+}
+
+.dribbble1 {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 130%;
+
+
+}
+
+.dribbble1:hover {
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.linkedin {
+    width: 50px;
+    height: 50px;
+    background-color: #ced7de;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 7px;
+    margin-right: 5px;
+
+}
+
+.linkedin:hover {
+    background-color: #007bff;
+    transition: 0.4s;
+}
+
+.linkedin1 {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 130%;
+
+
+}
+
+.linkedin1:hover {
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+/* End Footer Css ***************************************************************************************************/
